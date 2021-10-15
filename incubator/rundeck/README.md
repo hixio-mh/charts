@@ -1,7 +1,15 @@
+# ⚠️ Repo Archive Notice
+
+As of Nov 13, 2020, charts in this repo will no longer be updated.
+For more information, see the Helm Charts [Deprecation and Archive Notice](https://github.com/helm/charts#%EF%B8%8F-deprecation-and-archive-notice), and [Update](https://helm.sh/blog/charts-repo-deprecation/).
+
 # Rundeck Community Helm Chart
 
 Rundeck lets you turn your operations procedures into self-service jobs. Safely give others the control and visibility they need. Read more about Rundeck at [https://www.rundeck.com/open-source](https://www.rundeck.com/open-source).
 
+## DEPRECATION NOTICE
+
+This chart is deprecated and no longer supported.
 
 ## Install
 
@@ -43,6 +51,7 @@ serviceAccount.name | Name of the service account the Rundeck pod should use | "
 volumes | volumes made available to all containers | ""
 volumeMounts | volumeMounts to add to the rundeck container | ""
 initContainers | can be used to download plugins or customise your rundeck installation | ""
+sideCars | can be used to run additional containers in the pod | ""
 
 ## AWS & K8s Permissions
 
